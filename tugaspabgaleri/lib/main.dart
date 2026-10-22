@@ -37,13 +37,13 @@ class GaleriFoto extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            //Image jalan barcelona
             Image.asset(
               'assets/images/Jalan_Barcelona.jpg',
               width: double.infinity,
               fit: BoxFit.cover,
             ),
 
-            // Container pembungkus seluruh konten teks di bawah gambar
             Container(
               padding: const EdgeInsets.all(16),
               child: Column(
@@ -62,14 +62,14 @@ class GaleriFoto extends StatelessWidget {
                     ),
                   ),
 
-                  // Garis pembatas pertama
+                  //Garis Pertama
                   Divider(
                     height: 24,
                     thickness: 1,
                     color: Colors.grey.shade300,
                   ),
 
-                  // Baris informasi Lokasi (menggunakan Icons.place sesuai Slide 20)
+                  //Lokasi
                   const Row(
                     children: [
                       Icon(
@@ -87,7 +87,7 @@ class GaleriFoto extends StatelessWidget {
 
                   const SizedBox(height: 8),
 
-                  // Baris informasi Publikasi (menggunakan Icons.calendar_month sesuai Slide 20)
+                  //Publikasi
                   const Row(
                     children: [
                       Icon(
@@ -103,14 +103,14 @@ class GaleriFoto extends StatelessWidget {
                     ],
                   ),
 
-                  // Garis pembatas kedua
+                  //Garis kedua
                   Divider(
                     height: 24,
                     thickness: 1,
                     color: Colors.grey.shade300,
                   ),
 
-                  // Subjudul Deskripsi
+                  // Deskripsi
                   Container(
                     margin: const EdgeInsets.only(top: 4, bottom: 8),
                     child: const Text(
@@ -123,12 +123,9 @@ class GaleriFoto extends StatelessWidget {
                     ),
                   ),
 
-                  // Isi paragraf deskripsi (rata kanan-kiri sesuai gambar)
+                  // Deskripsi
                   const Text(
-                    'Sebuah persimpangan jalan di Barcelona, Spanyol. '
-                    'Foto ini menampilkan berbagai kendaraan yang bergerak '
-                    'dalam arah yang berbeda, menciptakan pemandangan '
-                    'yang sibuk dan energik.',
+                    'Sebuah persimpangan jalan di Barcelona, Spanyol. Foto ini menampilkan berbagai kendaraan yang bergerak dalam arah yang berbeda, menciptakan pemandangan yang sibuk dan energik.',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 14,
